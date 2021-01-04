@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: #8B008B;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finalprojecthardwarestore.CustomerDetailsController">
+   <children>
+      <Label layoutX="350.0" prefHeight="35.0" prefWidth="199.0" text="Customer Details" textFill="#f5f3f3">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="85.0" prefHeight="18.0" prefWidth="143.0" text="Customer Id :" textFill="#f5f3f3" />
+      <TextField fx:id="id" layoutX="182.0" layoutY="81.0" prefHeight="26.0" prefWidth="59.0" />
+      <Label layoutX="450.0" layoutY="85.0" prefHeight="18.0" prefWidth="143.0" text="Customer Address :" textFill="#f5f3f3" />
+      <TextField fx:id="tel" layoutX="182.0" layoutY="159.0" prefHeight="26.0" prefWidth="235.0" />
+      <Label layoutX="14.0" layoutY="163.0" prefHeight="18.0" prefWidth="143.0" text="Customer Tel :" textFill="#f5f3f3" />
+      <TextField fx:id="address" layoutX="619.0" layoutY="81.0" prefHeight="26.0" prefWidth="228.0" />
+      <Label layoutX="14.0" layoutY="123.0" prefHeight="18.0" prefWidth="143.0" text="Customer Name :" textFill="#f5f3f3" />
+      <TextField fx:id="name" layoutX="182.0" layoutY="119.0" prefHeight="26.0" prefWidth="235.0" />
+      <Label layoutX="450.0" layoutY="123.0" prefHeight="18.0" prefWidth="143.0" text="Customer Discount Rate :" textFill="#f5f3f3" />
+      <TextField fx:id="discountrate" layoutX="619.0" layoutY="119.0" prefHeight="26.0" prefWidth="59.0" />
+      <TableView fx:id="table" layoutX="13.0" layoutY="286.0" onMouseClicked="#tableOnMouseClicked" prefHeight="200.0" prefWidth="881.0" />
+      <Button fx:id="add" layoutX="86.0" layoutY="216.0" mnemonicParsing="false" onAction="#addOnAction" prefHeight="47.0" prefWidth="170.0" text="ADD Customer Record">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="delete" layoutX="695.0" layoutY="216.0" mnemonicParsing="false" onAction="#deleteOnAction" prefHeight="47.0" prefWidth="190.0" text="DELETE Customer Record">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

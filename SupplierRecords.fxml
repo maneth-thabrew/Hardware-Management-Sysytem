@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="950.0" style="-fx-background-color: #FFC0CB;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finalprojecthardwarestore.SupplierRecordsController">
+   <children>
+      <Label layoutX="351.0" layoutY="14.0" prefHeight="51.0" prefWidth="248.0" text="Supplier Records ">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Label>
+      <Button fx:id="add" layoutX="692.0" layoutY="113.0" mnemonicParsing="false" onAction="#addOnAction" prefHeight="69.0" prefWidth="215.0" text="To ADD  Supplier Fill above&#10;details and &#10;PRESS HERE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="delete" layoutX="691.0" layoutY="215.0" mnemonicParsing="false" onAction="#deleteOnAction" prefHeight="78.0" prefWidth="215.0" text="To DELETE a Supplier &#10;Select a Supplier and&#10; PRESS HERE&#10;">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <TableView fx:id="table" layoutX="10.0" layoutY="320.0" onMouseClicked="#tableOnMouseClicked" prefHeight="290.0" prefWidth="935.0" />
+      <Label layoutX="45.0" layoutY="86.0" prefHeight="28.0" prefWidth="226.0" text="Supplier Id :">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="140.0" prefHeight="28.0" prefWidth="143.0" text="Supplier Name :">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="240.0" prefHeight="28.0" prefWidth="166.0" text="Supplier Address :">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="185.0" prefHeight="28.0" prefWidth="118.0" text="Supplier Tel :">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="id" layoutX="271.0" layoutY="87.0" prefHeight="26.0" prefWidth="54.0" />
+      <TextField fx:id="name" layoutX="268.0" layoutY="140.0" prefHeight="28.0" prefWidth="268.0" />
+      <TextField fx:id="tel" layoutX="268.0" layoutY="186.0" prefHeight="26.0" prefWidth="268.0" />
+      <TextField fx:id="address" layoutX="268.0" layoutY="240.0" prefHeight="28.0" prefWidth="268.0" />
+   </children>
+</AnchorPane>

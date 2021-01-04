@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finalprojecthardwarestore.MenuPageController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="912.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/menupagetool.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="607.0" layoutY="459.0" mnemonicParsing="false" onAction="#handleButton1Action" prefHeight="74.0" prefWidth="280.0" style="-fx-background-color: #000000;" text="Supplier Records" textFill="#f8f3f3">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Button>
+      <Button layoutX="107.0" layoutY="65.0" mnemonicParsing="false" onAction="#handleButton6Action" prefHeight="74.0" prefWidth="161.0" style="-fx-background-color: #000000;" text="BILLING" textFill="#fdfafa">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Button>
+      <Button layoutX="610.0" layoutY="56.0" mnemonicParsing="false" onAction="#handleButton5Action" prefHeight="74.0" prefWidth="274.0" style="-fx-background-color: #000000;" text="Employee Details" textFill="#fdfafa">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Button>
+      <Button layoutX="610.0" layoutY="275.0" mnemonicParsing="false" onAction="#handleButton2Action" prefHeight="74.0" prefWidth="296.0" style="-fx-background-color: #000000;" text="Purchasing Records" textFill="#f8eeee">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Button>
+      <Button layoutX="1.0" layoutY="275.0" mnemonicParsing="false" onAction="#handleButton3Action" prefHeight="74.0" prefWidth="274.0" style="-fx-background-color: #000000;" text="Customer Details" textFill="#f5f0f0">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Button>
+      <Button layoutX="46.0" layoutY="459.0" mnemonicParsing="false" onAction="#handleButton4Action" prefHeight="74.0" prefWidth="222.0" style="-fx-background-color: #000000;" text="Stock Details" textFill="#f5eeee">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

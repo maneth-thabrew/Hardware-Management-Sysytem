@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="601.0" prefWidth="1145.0" style="-fx-background-color: #FFA500;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finalprojecthardwarestore.ForBillingController">
+   <children>
+      <Label layoutX="381.0" prefHeight="35.0" prefWidth="138.0" text="Billing Page">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="135.0" prefHeight="18.0" prefWidth="106.0" text="Customer :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="403.0" layoutY="62.0" prefHeight="18.0" prefWidth="106.0" text="Qty :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="qty" layoutX="509.0" layoutY="59.0" />
+      <Label layoutX="403.0" layoutY="99.0" prefHeight="18.0" prefWidth="106.0" text="Bill Date :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="date" layoutX="509.0" layoutY="96.0" />
+      <Label layoutX="403.0" layoutY="135.0" prefHeight="18.0" prefWidth="106.0" text="Price :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="price" layoutX="509.0" layoutY="132.0" />
+      <Label layoutX="43.0" layoutY="100.0" prefHeight="18.0" prefWidth="106.0" text="Item ID :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table" layoutX="7.0" layoutY="200.0" onMouseClicked="#tableOnMouseClicked" prefHeight="260.0" prefWidth="1272.0" />
+      <Button layoutX="665.0" layoutY="491.0" mnemonicParsing="false" onAction="#billOnAction" prefHeight="63.0" prefWidth="150.0" text="Click Here To Bill">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="cancel" layoutX="74.0" layoutY="491.0" mnemonicParsing="false" onAction="#cancelOnAction" prefHeight="63.0" prefWidth="150.0" text="Cancel">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="43.0" layoutY="63.0" prefHeight="18.0" prefWidth="106.0" text="Bill ID :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="billId" layoutX="149.0" layoutY="59.0" />
+      <ComboBox fx:id="itemId" layoutX="148.0" layoutY="97.0" prefWidth="150.0" promptText="Select Item ID" />
+      <ComboBox fx:id="custId" layoutX="149.0" layoutY="132.0" prefWidth="150.0" promptText="Select Customer ID" />
+      <Label layoutX="701.0" layoutY="63.0" prefHeight="18.0" prefWidth="106.0" text="Discount :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="discount" layoutX="807.0" layoutY="60.0" />
+   </children>
+</AnchorPane>
